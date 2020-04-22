@@ -1,0 +1,55 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PHP First Form</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <style type="text/css">
+            body {
+                background-color: lightgray;
+                font-family: 'Open Sans', sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>First Form</h1>
+        <form action="handle_form.php" method="post">
+            <fieldset><legend>Enter your information: </legend>
+                <p>
+                    <label>First Name: </label>
+                    <input type="text" name="firstName" size="20" maxlength="40" />
+                </p>
+                <p>
+                    <label>Email: </label>
+                    <input type="email" name="email" size="26" maxlength="60" />
+                </p>
+                <p>
+                    True or False?<br>
+                    <input type="radio" name="trueOrFalse" value="true" />
+                    <label>True</label>
+                    <input type="radio" name="trueOrFalse" value="false" />
+                    <label>False</label>
+                    
+                </p>
+                <p>
+                    <label>Pick a Color:</label>
+                    <select name="color">
+                        <option value="red">Red</option>
+                        <option value="green">Green</option>
+                        <option value="blue">Blue</option>
+                    </select>
+                </p>
+                <p>
+                    <label>Comments:</label>
+                    <textarea name="comments"></textarea>
+                </p>
+                
+                <input type="submit" />
+            </fieldset>
+            
+        </form>
+    
+    </body>
+
+</html>
